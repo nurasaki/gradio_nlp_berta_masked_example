@@ -10,20 +10,29 @@ pinned: false
 ---
 
 
+# Masked Language Modeling Example
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+by [nurasaki](https://huggingface.co/spaces/nurasaki)  
 
-```sh git commands
-git clone https://huggingface.co/spaces/nurasaki/gradio_nlp_berta_masked_example
-echo __pycache__/ > .gitignore\n
-git status
-git add .
-git commit -am "gradio_nlp_berta_masked_example: first commit"
-git push
+* Space : [https://huggingface.co/spaces/nurasaki/gradio_nlp_berta_masked_example](https://huggingface.co/spaces/nurasaki/gradio_nlp_berta_masked_example)
+* Model used: Catalan BERTa-v2 (roberta-base-ca-v2) base model
+* Hugginface link: [https://huggingface.co/projecte-aina/roberta-base-ca-v2](https://huggingface.co/projecte-aina/roberta-base-ca-v2)
 
-git remote add gh_repo git@github.com:nurasaki/gradio_nlp_berta_masked_example.git
-git push gh_repo main
-```
+<br>
 
+## Model description
 
+The **roberta-base-ca-v2** is a transformer-based masked language model for the Catalan language. 
+
+It is based on the [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) base model and has been trained on a medium-size corpus collected from publicly available corpora and crawlers.
+
+<br>
+
+## Usage
+
+The model accepts an input text with a *mask* (for example, "La meva mare es diu \<mask\>.") and generates the *k* most probable words that could fill the *mask* position in the sentence.  
+
+Choose one of the provided examples or enter your own masked text.
+
+<br>
 
