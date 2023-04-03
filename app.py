@@ -2,7 +2,7 @@ import gradio as gr
 import os
 
  
-
+# https://huggingface.co/docs/hub/spaces-gpus
 import torch
 from transformers import AutoTokenizer, AutoModelForMaskedLM
 from torch.nn.functional import softmax
